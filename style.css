@@ -1,0 +1,165 @@
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-image: url(image/about.jpg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  height: 5vh;
+  background-color: #dd5555;
+}
+
+header > ul {
+  height: 100%;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+ul > li {
+  font-weight: 200;
+  font-size: 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+li > img {
+  height: 4vh;
+}
+
+li > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+li > a:not(:has(img)):hover {
+  background-color: #a64040;
+  color: #fff;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.center-container {
+  color: #fff;
+  text-align: center;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 3rem;
+}
+
+.title-container h1 {
+  font-weight: 700;
+  font-size: 5vmin;
+}
+
+.title-container h2 {
+  font-size: 2vmin;
+}
+
+.spacer {
+  margin: 2rem 0;
+  background-color: #fff;
+  height: 1px;
+  width: 100%;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container button {
+  font-size: 2vmin;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 300ms ease;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #4b4b4b;
+  color: #fff;
+}
+
+.fa-solid {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: center;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #DD5555;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
